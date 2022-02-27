@@ -15,64 +15,72 @@
     rel="stylesheet"
   />
   <style>
-    body {
-      background-image: url("gym1.jpg");
-      background-size: 412px 914px;
-      background-repeat: no-repeat;
-      
-      font-family: "Kaushan Script", cursive;
-    }
+    @media (max-width: 500px) {
+      body {
+        background-image: url("gym1.jpg");
+        background-size: 412px 914px;
+        background-repeat: no-repeat;
 
-    .container {
-      margin-top: 20%;
-    }
+        font-family: "Kaushan Script", cursive;
+      }
 
-    .formgroup input {
-      text-align: center;
-      font-weight: 300;
-      margin-left: 10%;
-      font-size: 17px;
-      border-radius: 10em;
-      color: black;
-    }
+      .container {
+        margin-top: 20%;
+      }
 
-    .container button {
-      font-family: "Kaushan Script", cursive;
-
-      display: block;
-      margin-left: 17%;
-      padding-left: 3%;
-      width: 40%;
-    }
-
-    h3 {
-      color: white;
-      margin-left: 6.5%;
-    }
-
-    img {
-      width: 100px;
-      filter: invert(100%);
-      margin-left: 25%;
-      margin-top: 50%;
-      align-items: center;
-    }
-
-    .left div {
-      color: white;
-      text-align: center;
-      margin-top: 5%;
-      margin-right: 25%;
-      font-family: "WindSong", cursive;
-    }
-
-    .right {
-      margin-left: 16%;
-      margin-top: 70%;
-    }
-
-    .btn {
+      .formgroup input {
+        text-align: center;
+        font-weight: 300;
+        margin-left: 10%;
+        font-size: 17px;
         border-radius: 10em;
+        color: black;
+      }
+
+      .container button {
+        font-family: "Kaushan Script", cursive;
+
+        display: block;
+        margin-left: 17%;
+        padding-left: 3%;
+        width: 40%;
+      }
+
+      h3 {
+        color: white;
+        margin-left: 6.5%;
+      }
+
+      img {
+        width: 100px;
+        filter: invert(100%);
+        margin-left: 25%;
+        margin-top: 50%;
+        align-items: center;
+      }
+
+      .left div {
+        color: white;
+        text-align: center;
+        margin-top: 5%;
+        margin-right: 25%;
+        font-family: "WindSong", cursive;
+      }
+
+      .right {
+        margin-left: 16%;
+        margin-top: 70%;
+      }
+
+      .btn {
+        border-radius: 10em;
+      }
+    }
+
+    @media (min-width: 500px) and (max-width: 3000px) {
+      body {
+        display: none;
+      }
     }
   </style>
   <body>

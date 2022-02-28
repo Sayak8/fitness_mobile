@@ -59,7 +59,7 @@
         align-items: center;
       }
 
-      .left div {
+      .top div {
         color: white;
         text-align: center;
         margin-top: 5%;
@@ -67,7 +67,7 @@
         font-family: "WindSong", cursive;
       }
 
-      .right {
+      .bottom {
         margin-left: 16%;
         margin-top: 70%;
       }
@@ -75,16 +75,175 @@
       .btn {
         border-radius: 10em;
       }
+
+      .header {
+        display: none;
+      }
+
+      .left {
+        display: none;
+      }
+
+      .mid {
+        display: none;
+      }
+
+      .navbar {
+        display: none;
+      }
+
+      .right {
+        display: none;
+      }
+
+      .right button {
+        display: none;
+      }
     }
 
     @media (min-width: 500px) and (max-width: 3000px) {
       body {
-        display: none;
-      }
+      background-image: url("gym.jpg");
+      font-family: "Kaushan Script", cursive;
+      color: white;
+      background-repeat: no-repeat;
+      
+    }
+
+    .left {
+      /* border: 3px solid red; */
+      display: inline-block;
+      position: absolute;
+
+      left: 51px;
+      top: 28px;
+    }
+    .mid {
+      /* border: 3px solid red; */
+      display: block;
+      margin: 22px auto;
+      width: 50%;
+      padding-left: 100px;
+    }
+    .right {
+      display: inline-block;
+      /* border: 3px solid red; */
+      position: absolute;
+      right: 34px;
+      top: 40px;
+    }
+    .navbar li {
+      display: inline-block;
+      font-size: 23px;
+    }
+
+    .left img {
+      width: 100px;
+      filter: invert(100%);
+    }
+
+    .left div {
+      font-family: "WindSong", cursive;
+      text-align: center;
+      size: 10px;
+    }
+
+    .navbar li a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 11px;
+      color: white;
+    }
+    .navbar li a:hover,
+    .navbar li a.active {
+      color: gray;
+      text-decoration: underline;
+    }
+
+    .btn {
+      font-family: "Kaushan Script", cursive;
+      margin: -8px 9px;
+      color: white;
+      background-color: black;
+      border-radius: 17px;
+      padding: 8px 8px;
+      cursor: pointer;
+    }
+
+    .btn:hover {
+      color: gray;
+    }
+
+    .container {
+      border: 2px solid white;
+      margin: 199px 45px;
+      padding: 7px 92px;
+      padding-top: 49px;
+      padding-bottom: 100px;
+      width: 38%;
+      border-radius: 10px;
+    }
+
+    .formgroup input {
+      text-align: center;
+      display: block;
+      margin: 11px auto;
+      width: 444px;
+      padding: 9px;
+      font-size: 17px;
+      border-radius: 10px;
+
+      color: black;
+    }
+
+    .container button {
+      font-family: "Kaushan Script", cursive;
+
+      display: block;
+      margin: auto;
+      width: 81%;
+    }
+
+    h3 {
+      text-align: center;
+    }
+
+    .bottom {
+      display: none;
+    }
+    .top {
+      display: none;
+    }
+
+
     }
   </style>
   <body>
-    <div class="left">
+    <header class="header">
+      <!-- logo -->
+      <div class="left">
+        <img src="logo.png" alt="" />
+        <div><strong>Sayak Fitness</strong></div>
+      </div>
+
+      <!-- navbar -->
+      <div class="mid">
+        <ul class="navbar">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Fitness Calculator</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <!-- button -->
+      <div class="right">
+        <button class="btn">Call Us Now</button>
+        <button class="btn">Email Us</button>
+      </div>
+    </header>
+
+
+    <div class="top">
       <img src="logo.png" alt="" />
       <div><strong>Sayak Fitness</strong></div>
     </div>
@@ -108,7 +267,7 @@
       </form>
     </div>
 
-    <div class="right">
+    <div class="bottom">
       <button class="btn">Call Us Now</button>
       <button class="btn">Email Us</button>
     </div>
